@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  pycharm_2:
+    container_name: pycharm2.0
+    image: pycharm:3.0
+    build: .
+    ports:
+      - 5900:5900
+    volumes:
+      - C:\Docker_Volumes\Pycharm:/Docker_Volumes/Pycharm:rw
+      - C:\Docker_Volumes\Matlab:/Docker_Volumes/Matlab:rw
+      - C:\Docker_Volumes\FreeCad:/Docker_Volumes/FreeCad:rw
