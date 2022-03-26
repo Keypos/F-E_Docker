@@ -23,5 +23,5 @@ RUN echo "DISPLAY=:0.0 \
 	x11vnc -forever" > /entrypoint.sh &&\
 	chmod +x /entrypoint.sh
 ENV DISPLAY=:0.0
-USER userd
+USER user
 ENTRYPOINT ["sh", "/entrypoint.sh"]
